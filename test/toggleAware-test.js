@@ -78,40 +78,35 @@ describe('toggleAware Component', function() {
         expect(props.isToggled).to.be.false;
     });
 
-    it.skip('should honor the "onDelay" option', function(done) {
-        const Test = toggleAware({ outDelay: 100 })(_Test);
+    it('should honor the "onDelay" option', function(done) {
+        const Test = toggleAware({ onDelay: 100 })(_Test);
         TestUtils.renderIntoDocument(<Test />);
 
         // starts inactive
         expect(props.isToggled).to.be.false;
 
-        // syncronously becomes active
-        props.onMouseEnter();
-        expect(props.isToggled).to.be.true;
-
-        // asynchronously becomes inactive
-        props.onMouseLeave();
-        expect(props.isToggled).to.be.true;
+        // asynchronously becomes active
+        props.onToggle();
+        expect(props.isToggled).to.be.false;
         setTimeout(function() {
-            expect(props.isToggled).to.be.false;
+            expect(props.isToggled).to.be.true;
             done();
         }, 300);
     });
 
-    it.skip('should honor the "offDelay" option', function(done) {
-        const Test = toggleAware({ outDelay: 100 })(_Test);
+    it('should honor the "offDelay" option', function(done) {
+        const Test = toggleAware({ offDelay: 100 })(_Test);
         TestUtils.renderIntoDocument(<Test />);
 
         // starts inactive
         expect(props.isToggled).to.be.false;
 
         // syncronously becomes active
-        props.onMouseEnter();
+        props.onToggle();
         expect(props.isToggled).to.be.true;
 
         // asynchronously becomes inactive
-        props.onMouseLeave();
-        expect(props.isToggled).to.be.true;
+        props.onToggle();
         setTimeout(function() {
             expect(props.isToggled).to.be.false;
             done();
