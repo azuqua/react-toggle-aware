@@ -1,11 +1,11 @@
-# react-toggleAware
+# react-toggle-aware
 
-A tiny decorator to track toggle state of a component.
+A tiny higher order component to track toggle state.
 
 ### Example
 ```js
 import { Component } from 'react';
-import { toggleAware } from 'react-toggleAware';
+import { toggleAware } from 'react-toggle-aware';
 
 @toggleAware({ // same as default options
     onDelay: 0,

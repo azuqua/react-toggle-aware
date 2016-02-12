@@ -1,17 +1,17 @@
 {
-  "name": "react-toggleAware",
+  "name": "react-toggle-aware",
   "version": "0.1.0",
-  "description": "A tiny decorator to track toggle state of a component.",
+  "description": "A tiny higher order component to track toggle state.",
   "main": "index.js",
   "scripts": {
     "test": "./scripts/test.sh"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/azuqua/react-toggle-aware"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/azuqua/react-toggle-aware/issues"
   },
   "keywords": [
     "react",
