@@ -24,7 +24,7 @@ class CustomComponent extends Component {
         return (
             <div {...props} className={className}>
 
-            </diV>
+            </div>
         )
     }
 };
