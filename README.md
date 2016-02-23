@@ -1,4 +1,4 @@
-# react-toggle-aware
+# react-toggle-aware [![Build Status](https://travis-ci.org/azuqua/react-toggle-aware.svg?branch=master)](https://travis-ci.org/azuqua/react-toggle-aware)
 
 A tiny higher order component to track toggle state.
 
