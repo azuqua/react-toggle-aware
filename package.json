@@ -2,7 +2,7 @@
   "name": "react-toggle-aware",
   "version": "0.1.0",
   "description": "A tiny higher order component to track toggle state.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "./scripts/test.sh"
   },
